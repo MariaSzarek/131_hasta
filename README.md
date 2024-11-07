@@ -1,6 +1,15 @@
 # Hasta reservation
 
-Script to check court availability
+Script to check court availability. 
+
+
+#### Example return:
+
+Kort 7 jest wolny przez ponad godzinę w dniach: 12, 12, 14.
+Kort 8 jest wolny przez ponad godzinę w dniach: 7, 13, 14.
+Kort 9 jest wolny przez ponad godzinę w dniach: 12, 12, 13.
+Kort 10 jest wolny przez ponad godzinę w dniach: 12, 14, 14.
+
 
 ## Running Locally
 
