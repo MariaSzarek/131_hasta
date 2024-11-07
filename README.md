@@ -1,6 +1,6 @@
-# Tasker
+# Hasta reservation
 
-Rest API for Tasker Webapp
+Script to check court availability
 
 ## Running Locally
 

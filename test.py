@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 import time
 from datetime import datetime
 from selenium.common.exceptions import NoSuchElementException
-from corts import Court
+from courts import Court
 
 courts = {}
 today = datetime.now()
