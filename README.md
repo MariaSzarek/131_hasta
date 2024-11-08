@@ -1,13 +1,17 @@
 # Hasta reservation
 
-Script to check court availability. 
+Script to check available court slots throughout the day. Free slots must be longer than 1 hour.
 
 
 #### Example return:
-
-Kort 7 jest wolny przez ponad godzinę w dniach: 12, 12, 14.
-Kort 8 jest wolny przez ponad godzinę w dniach: 7, 13, 14.
-Kort 9 jest wolny przez ponad godzinę w dniach: 12, 12, 13.
+   ```bash
+Dzisiejszy dzień miesiąca to: 9
+Dzień 31 nie istnieje na stronie.   
+W dniu 12 od godziny 12:30 do 14:00 kort 10 jest wolny.
+W dniu 12 od godziny 12:00 do 13:30 kort 9 jest wolny.
+W dniu 13 od godziny 10:30 do 13:30 kort 9 jest wolny.
+W dniu 14 od godziny 10:30 do 12:00 kort 7 jest wolny.
+   ```
 
 
 ## Running Locally
@@ -47,5 +51,11 @@ To run this application locally, follow these steps:
 
    ```bash
    pip install -r requirements.txt
+   ```
+
+6. Run script:
+
+   ```bash
+   python main.py
    ```
 

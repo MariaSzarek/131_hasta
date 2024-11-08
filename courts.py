@@ -5,15 +5,14 @@ class Court:
     def __init__(self, court_number):
         self.court_number = court_number
         self.free_times = []
-        self.free_days = []
 
     def add_free_time(self, start_time_str, end_time_str, day):
         start_time = datetime.strptime(start_time_str, "%H:%M")
         end_time = datetime.strptime(end_time_str, "%H:%M")
         self.free_times.append((start_time, end_time, day))
 
-    def has_free_time_longer_than_hour(self):
-        self.free_days = []
+    def get_free_time_slots_longer_than_hour(self):
+        free_slots = []
 
         free_times_by_day = {}
         for start_time, end_time, day in self.free_times:
@@ -30,14 +29,13 @@ class Court:
                     current_end = max(current_end, end)
                 else:
                     if current_end - current_start > timedelta(hours=1):
-                        self.free_days.append(day)
-                        break
+                        free_slots.append((day, current_start, current_end))
                     current_start, current_end = start, end
 
             if current_end - current_start > timedelta(hours=1):
-                self.free_days.append(day)
+                free_slots.append((day, current_start, current_end))
 
-        return self.free_days
+        return free_slots
 
 
 
