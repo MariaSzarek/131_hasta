@@ -1,6 +1,7 @@
 # Hasta reservation
 
-Script to check available court slots throughout the day. Free slots must be longer than 1 hour.
+This is an application that allows users to view available time slots for courts. 
+Free slots must be longer than 1 hour.
 
 
 #### Example return:
@@ -34,6 +35,9 @@ To run this application locally, follow these steps:
 
 2. Navigate to the project directory:
 
+   ```bash
+   cd 131_hasta
+   ```
 
 3. Create a virtual environment:
 
@@ -58,4 +62,12 @@ To run this application locally, follow these steps:
    ```bash
    python main.py
    ```
+   
+7. Testing:
+8. 
+   ```bash
+   pytest tests/test_courts.py
+   ```
+
+
 
