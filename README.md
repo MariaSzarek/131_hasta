@@ -64,7 +64,7 @@ To run this application locally, follow these steps:
    ```
    
 7. Testing:
-8. 
+
    ```bash
    pytest tests/test_courts.py
    ```
